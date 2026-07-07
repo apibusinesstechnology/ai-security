@@ -1,3 +1,4 @@
+
 <p align="center">
   <strong>AI‑Security</strong><br>
   Système intelligent de détection de menaces basé sur l’IA
@@ -28,14 +29,14 @@ Le projet combine IA, DevOps, sécurité avancée et monitoring pour offrir une 
 # Roadmap 2026–2027
 
 ## 2026
-- Développement du moteur IA de détection comportementale  
+- Développement du moteur IA de détection comportemental 
 - Mise en place du système d’alertes intelligentes  
 - Intégration API REST pour communication externe  
 - Version bêta du tableau de bord de monitoring  
 - Pipeline CI/CD complet (tests, build, analyse qualité)
 
 ## 2027
-- IA prédictive (analyse des patterns historiques)  
+- IA prédictive (analyse des patterns historiques) 
 - Module de prévention automatique (auto‑mitigation)  
 - Intégration cloud (AWS, Azure, GCP)  
 - Version Enterprise avec multi‑tenant  
@@ -45,19 +46,22 @@ Le projet combine IA, DevOps, sécurité avancée et monitoring pour offrir une 
 
 # Technologies utilisées
 
-### Développement & IA
+### Développement &IA
+
 - Python / Node.js  
 - TensorFlow / PyTorch  
 - Scikit‑Learn  
 - FastAPI / Express.js
 
 ### DevOps & Infrastructure
+
 - Docker, Kubernetes  
 - GitLab CI/CD  
 - Terraform, Ansible  
 - Prometheus, Grafana
 
 ### Sécurité
+
 - IAM / RBAC  
 - Zero‑Trust Architecture  
 - Audit & Logging avancé  
@@ -70,21 +74,25 @@ Le projet combine IA, DevOps, sécurité avancée et monitoring pour offrir une 
 AI‑Security repose sur une architecture modulaire en quatre couches :
 
 ### **AI Detection Layer**
+
 - Analyse comportementale  
 - Modèles IA prédictifs  
 - Détection d’anomalies
 
 ### **Security Core Layer**
+
 - Gestion des règles de sécurité  
 - Système d’alertes intelligentes  
 - Audit & logs centralisés
 
 ### **API & Integration Layer**
+
 - API REST  
 - Webhooks  
 - Connecteurs externes
 
 ### **Dashboard & Visualization Layer**
+
 - Interface moderne  
 - Graphiques temps réel  
 - Monitoring des risques
@@ -93,32 +101,32 @@ AI‑Security repose sur une architecture modulaire en quatre couches :
 
 # Pourquoi investir dans AI‑Security
 
-### Solution moderne et innovante  
+### Solution moderne et innovante
+
 Cybersécurité basée sur IA, adaptée aux menaces actuelles.
 
 ### Automatisation avancée  
+
 Réduction des risques, alertes intelligentes, prévention proactive.
 
-### Architecture scalable  
+### Architecture scalable
+
 Conçue pour PME, startups et grandes entreprises.
 
-### Vision long terme  
+### Vision long terme
+
 Roadmap claire, évolutive, orientée IA et sécurité.
 
-### Expertise technique  
+### Expertise technique
+
 Développée par un ingénieur DevOps & IA expérimenté.
 
 ---
 
 # Licence
+
 SEE LICENSE IN LICENSE.txt
 
 ---
 
-
-
----
-
-# 📞 Contact
-API Business Technology  
-Département IA & Cybersécurité  
+=======
