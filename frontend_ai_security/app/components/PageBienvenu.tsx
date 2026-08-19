@@ -1,6 +1,8 @@
 "use client"
 import Image from "next/image";
 import "./PageBienvenue.css";
+import Link from "next/link";
+import { DocsLinkButton } from "next/dist/next-devtools/dev-overlay/components/errors/error-overlay-toolbar/docs-link-button";
 
 export default function PageBienvenue(){
 
@@ -14,13 +16,12 @@ export default function PageBienvenue(){
             </div>
             
             <div id="boiteButton">
-                <button>
-                    Inscription
-                </button> 
-
-                <button>
+                <Link href="/" className="bouton">
+                     Inscription
+                </Link>
+                <Link href="/loginForm" className="bouton">
                     Se connecter
-                </button> 
+                </Link>
             </div>
              
         </div>
