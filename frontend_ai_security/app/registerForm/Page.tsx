@@ -1,8 +1,7 @@
 "use client";
-import "./AfficherFormRegister.css";
+import "./AfficherRegister.css";
 import RegisterForm1 from "../components/RegisterForm";
-
-
+import Image from "next/image";
 type RegisterData = {
   nom: string;
   prenom: string;
@@ -25,6 +24,7 @@ export default function RegisterPage() {
 
   return (
     <div className="Register">
+      <Image src="/logo.png" alt="Logo de Ai security" width={150} height={150}/> 
       <RegisterForm1 onSubmit={handleRegister} />
     </div>
   );
