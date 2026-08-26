@@ -6,7 +6,6 @@ type LoginFormProps = {
   onSubmit: (data: {
     email: string;
     password: string;
-    smsCode: string;
   }) => void;
   loading?: boolean;
 };
@@ -14,13 +13,12 @@ type LoginFormProps = {
 export default function SecureLoginForm({ onSubmit, loading }: LoginFormProps) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [smsCode, setSmsCode] = useState("");
   const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!email || !password || !smsCode) {
+    if (!email || !password) {
       setError("Tanpri ranpli tout chan yo.");
       return;
     }
@@ -32,7 +30,7 @@ export default function SecureLoginForm({ onSubmit, loading }: LoginFormProps) {
     }
 
     setError(null);
-    onSubmit({ email, password, smsCode });
+    onSubmit({ email, password});
   };
 
   return (
@@ -72,22 +70,6 @@ export default function SecureLoginForm({ onSubmit, loading }: LoginFormProps) {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           autoComplete="current-password"
-          required
-        />
-      </div>
-
-      <div className="boite">
-        <label className="label">
-          Code SMS (2FA)
-        </label>
-        <input
-          type="text"
-          className="input"
-          value={smsCode}
-          onChange={(e) => setSmsCode(e.target.value)}
-          maxLength={6}
-          inputMode="numeric"
-          autoComplete="one-time-code"
           required
         />
       </div>
