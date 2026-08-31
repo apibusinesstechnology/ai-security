@@ -1,0 +1,36 @@
+{
+  "name": "ai_security_backend",
+  "version": "1.0.0",
+  "description": "Backend du logiciel de AI-SECURITY.",
+  "keywords": [
+    "[AI-SECURITY]",
+    "Startup",
+    "complete."
+  ],
+  "homepage": "https://gitlab.com/apibusinesstechnology-group/depot_ai-securite-publique#readme",
+  "bugs": {
+    "url": "https://gitlab.com/apibusinesstechnology-group/depot_ai-securite-publique/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/apibusinesstechnology-group/depot_ai-securite-publique.git"
+  },
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "author": "Pierre Richard Saint Louis-API Business Technology",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "node server.js",
+    "dev" : "nodemon server.js"
+  },
+  "dependencies": {
+    "compression": "^1.8.1",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "helmet": "^8.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
