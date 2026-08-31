@@ -1,0 +1,24 @@
+{
+  "name": "ai-securite-publique",
+  "version": "1.0.0",
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/jest": "^30.0.0",
+    "artillery": "^2.0.34",
+    "artillery-plugin-metrics-by-endpoint": "^1.27.0",
+    "babel-jest": "^30.5.0",
+    "eslint-config-next": "^16.3.3",
+    "husky": "^9.1.7",
+    "jest": "^30.5.0",
+    "jest-mock": "^30.5.0",
+    "jest-snapshot": "^30.5.0",
+    "mongodb-memory-server": "^11.2.0",
+    "playwright": "^1.62.1",
+    "supertest": "^7.2.2",
+    "ts-jest": "^29.4.12"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
