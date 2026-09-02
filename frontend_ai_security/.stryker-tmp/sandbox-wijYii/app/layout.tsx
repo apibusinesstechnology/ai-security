@@ -1,22 +1,16 @@
 // @ts-nocheck
-import type { Metadata } from "next";
-import "./globals.css";
+import type { Metadata } from 'next';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "MinistryFlow",
-  description: "Plateforme intelligente pour gérer votre ministère",
+  title: 'MinistryFlow',
+  description: 'Plateforme intelligente pour gérer votre ministère',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
       <body>{children}</body>
     </html>
   );
 }
-
-

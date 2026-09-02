@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
+    "lint": "eslint .",
     "prettier": "prettier --write .",
     "prepare": "husky install",
     "test:unit": "jest --runTestsByPath dossier_test/unit_test",
@@ -14,9 +14,10 @@
     "test:integration": "jest --runTestsByPath dossier_test/integration_test",
     "test:coverage": "jest --coverage",
     "test:all": "npm run test && npm run test:coverage",
-     "test": "jest --ci",
+    "test": "jest --ci",
     "test:watch": "jest --watch",
-     "mutate": "stryker run"
+    "mutate": "stryker run",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "next": "16.2.11",
@@ -35,6 +36,8 @@
     "@types/react-dom": "^19",
     "eslint": "^9.39.5",
     "eslint-config-next": "16.2.11",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
     "jest": "^30.5.0",
     "jest-environment-jsdom": "^30.5.0",
     "prettier": "^3.9.6",

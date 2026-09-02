@@ -1,56 +1,44 @@
 // @ts-nocheck
-"use client";
-import { useState } from "react";
-import "./LoginForm.css";
+'use client';
+import { useState } from 'react';
+import './LoginForm.css';
 
 type LoginFormProps = {
-  onSubmit: (data: {
-    email: string;
-    password: string;
-  }) => void;
+  onSubmit: (data: { email: string; password: string }) => void;
   loading?: boolean;
 };
 
 export default function SecureLoginForm({ onSubmit, loading }: LoginFormProps) {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!email || !password) {
-      setError("Tanpri ranpli tout chan yo.");
+      setError('Tanpri ranpli tout chan yo.');
       return;
     }
 
     // Validation senp email
-    if (!email.includes("@")) {
-      setError("Email la pa valab.");
+    if (!email.includes('@')) {
+      setError('Email la pa valab.');
       return;
     }
 
     setError(null);
-    onSubmit({ email, password});
+    onSubmit({ email, password });
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="Form"
-    >
-      <h2>
-        Connexion sécurisée
-      </h2>
+    <form onSubmit={handleSubmit} className="Form">
+      <h2>Connexion sécurisée</h2>
 
-      {error && (
-        <p className="text-red-500 text-sm text-center">{error}</p>
-      )}
+      {error && <p className="text-red-500 text-sm text-center">{error}</p>}
 
       <div className="boite">
-        <label className="label">
-          Adresse email
-        </label>
+        <label className="label">Adresse email</label>
         <input
           type="email"
           className="input"
@@ -62,9 +50,7 @@ export default function SecureLoginForm({ onSubmit, loading }: LoginFormProps) {
       </div>
 
       <div className="boite">
-        <label className="label">
-          Mot de passe
-        </label>
+        <label className="label">Mot de passe</label>
         <input
           type="password"
           className="input"
@@ -75,12 +61,8 @@ export default function SecureLoginForm({ onSubmit, loading }: LoginFormProps) {
         />
       </div>
 
-      <button
-        type="submit"
-        disabled={loading}
-        id="button"
-      >
-        {loading ? "Connexion en cours..." : "Se connecter"}
+      <button type="submit" disabled={loading} id="button">
+        {loading ? 'Connexion en cours...' : 'Se connecter'}
       </button>
     </form>
   );

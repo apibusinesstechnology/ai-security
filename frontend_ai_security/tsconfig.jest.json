@@ -13,7 +13,5 @@
       "@/*": ["./*"]
     }
   },
-  "include": [
-    "dossier_test/**/*"
-  ]
+  "include": ["dossier_test/**/*"]
 }
