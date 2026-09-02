@@ -20,7 +20,7 @@
     "ts-jest": "^29.4.12"
   },
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky",
     "test": "jest",
     "test:unit": "jest --runTestsByPath dossier_test/unit_test",
     "test:sentinelle": "jest --runTestsByPath dossier_test/sentinelle_test",
