@@ -4,6 +4,7 @@
   "type": "module",
   "devDependencies": {
     "@playwright/test": "^1.62.1",
+    "@testing-library/jest-dom": "^7.0.1",
     "@types/jest": "^30.0.0",
     "artillery": "^2.0.34",
     "artillery-plugin-metrics-by-endpoint": "^1.27.0",
@@ -19,6 +20,13 @@
     "ts-jest": "^29.4.12"
   },
   "scripts": {
-    "test": "jest"
+    "prepare": "husky install",
+    "test": "jest",
+    "test:unit": "jest --runTestsByPath dossier_test/unit_test",
+    "test:sentinelle": "jest --runTestsByPath dossier_test/sentinelle_test",
+    "test:integration": "jest --runTestsByPath dossier_test/integration_test",
+    "test:e2e": "playwright test",
+    "test:load": "artillery run dossier_test/load_test/load.yml",
+    "test:all": "npm run test && npm run test:e2e && npm run test:load"
   }
 }
