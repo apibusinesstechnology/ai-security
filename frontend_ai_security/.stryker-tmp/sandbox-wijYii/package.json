@@ -14,9 +14,9 @@
     "test:integration": "jest --runTestsByPath dossier_test/integration_test",
     "test:coverage": "jest --coverage",
     "test:all": "npm run test && npm run test:coverage",
-     "test": "jest --ci",
+    "test": "jest --ci",
     "test:watch": "jest --watch",
-     "mutate": "stryker run"
+    "mutate": "stryker run"
   },
   "dependencies": {
     "next": "16.2.11",
