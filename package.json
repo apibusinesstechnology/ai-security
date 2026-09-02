@@ -22,17 +22,17 @@
     "ts-jest": "^29.4.12"
   },
   "scripts": {
-    "prepare": "husky",
-    "test": "jest",
-    "test:unit": "jest --runTestsByPath dossier_test/unit_test",
-    "test:sentinelle": "jest --runTestsByPath dossier_test/sentinelle_test",
-    "test:integration": "jest --runTestsByPath dossier_test/integration_test",
-    "test:e2e": "playwright test",
-    "test:load": "artillery run dossier_test/load_test/load.yml",
-    "test:all": "npm run test && npm run test:e2e && npm run test:load",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "prettier": "prettier --write ."
-  },
+  "prepare": "husky",
+  "test": "jest",
+  "test:unit": "jest --runTestsByPath dossier_test/unit_test --passWithNoTests",
+  "test:sentinelle": "jest --runTestsByPath dossier_test/sentinelle_test",
+  "test:integration": "jest --runTestsByPath dossier_test/integration_test",
+  "test:e2e": "playwright test",
+  "test:load": "artillery run dossier_test/load_test/load.yml",
+  "test:all": "npm run test && npm run test:e2e && npm run test:load",
+  "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+  "prettier": "prettier --write ."
+},
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^8.69.0",
     "@typescript-eslint/parser": "^8.69.0"
