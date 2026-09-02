@@ -9,6 +9,7 @@
     "artillery": "^2.0.34",
     "artillery-plugin-metrics-by-endpoint": "^1.27.0",
     "babel-jest": "^30.5.0",
+    "eslint": "^9.39.5",
     "eslint-config-next": "^16.3.3",
     "husky": "^9.1.7",
     "jest": "^30.5.0",
@@ -27,6 +28,11 @@
     "test:integration": "jest --runTestsByPath dossier_test/integration_test",
     "test:e2e": "playwright test",
     "test:load": "artillery run dossier_test/load_test/load.yml",
-    "test:all": "npm run test && npm run test:e2e && npm run test:load"
+    "test:all": "npm run test && npm run test:e2e && npm run test:load",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.69.0",
+    "@typescript-eslint/parser": "^8.69.0"
   }
 }
