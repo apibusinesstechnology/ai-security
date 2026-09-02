@@ -17,6 +17,7 @@
     "jest-snapshot": "^30.5.0",
     "mongodb-memory-server": "^11.2.0",
     "playwright": "^1.62.1",
+    "prettier": "^3.9.6",
     "supertest": "^7.2.2",
     "ts-jest": "^29.4.12"
   },
@@ -29,7 +30,8 @@
     "test:e2e": "playwright test",
     "test:load": "artillery run dossier_test/load_test/load.yml",
     "test:all": "npm run test && npm run test:e2e && npm run test:load",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "prettier": "prettier --write ."
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^8.69.0",
