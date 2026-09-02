@@ -19,6 +19,7 @@
     "ts-jest": "^29.4.12"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky"
   }
 }
