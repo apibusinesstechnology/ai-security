@@ -1,6 +1,5 @@
 <p align="center">
   <img src="logoai-security.png" alt="APISTOCK Logo" width="200">
-  <h1>APISTOCK</h1>
 </p>
 
 
