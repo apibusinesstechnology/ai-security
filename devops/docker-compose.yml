@@ -1,0 +1,21 @@
+
+version: "3.9"
+
+services:
+  backend:
+    build: ./docker/backend
+    container_name: ai-security-backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ../ai_security_backend:/app
+    command: npm start
+
+  frontend:
+    build: ./docker/frontend
+    container_name: ai-security-frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ../ai_security_frontend:/app
+    command: npm run dev
