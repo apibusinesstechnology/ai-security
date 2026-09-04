@@ -22,6 +22,7 @@
     "ts-jest": "^29.4.12"
   },
   "scripts": {
+<<<<<<< HEAD
   "prepare": "husky",
   "test": "jest",
   "test:unit": "jest --runTestsByPath dossier_test/unit_test --passWithNoTests",
@@ -36,5 +37,9 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^8.69.0",
     "@typescript-eslint/parser": "^8.69.0"
+=======
+    "test": "jest",
+    "prepare": "husky"
+>>>>>>> feature/backend
   }
 }
