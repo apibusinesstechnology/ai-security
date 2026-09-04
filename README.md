@@ -6,133 +6,165 @@
 
 ---
 
-# AI‑Security — Présentation du projet
+# AI‑Security — Documentation Officielle
 
-AI‑Security est une plateforme moderne de cybersécurité basée sur l’intelligence artificielle.  
-Elle analyse le comportement des utilisateurs, détecte les anomalies en temps réel et génère des alertes intelligentes pour prévenir les menaces internes et externes.
+## Présentation du projet
 
-Le projet combine IA, DevOps, sécurité avancée et monitoring pour offrir une solution complète, scalable et adaptée aux entreprises modernes.
+AI‑Security est une plateforme intelligente dédiée à la sécurité publique.  
+Elle combine analyse comportementale, détection d’anomalies, surveillance en temps réel et IA prédictive pour anticiper les menaces et protéger les citoyens.
 
----
-
-# Objectifs du projet
-
-- Détection automatique des comportements suspects  
-- Analyse en temps réel des activités critiques  
-- IA prédictive pour anticiper les menaces  
-- Alertes intelligentes et contextualisées  
-- Intégration simple avec les systèmes existants  
-- Dashboard moderne pour visualiser les risques
+Ce système est conçu pour les ministères, agences gouvernementales, forces de l’ordre et organisations nécessitant une surveillance avancée.
 
 ---
 
-# Roadmap 2026–2027
+## Vision
 
-## 2026
-
-- Développement du moteur IA de détection comportementale  
-- Mise en place du système d’alertes intelligentes  
-- Intégration API REST pour communication externe  
-- Version bêta du tableau de bord de monitoring  
-- Pipeline CI/CD complet (tests, build, analyse qualité)
-
-## 2027
-
-- IA prédictive (analyse des patterns historiques)  
-- Module de prévention automatique (auto‑mitigation)  
-- Intégration cloud (AWS, Azure, GCP)  
-- Version Enterprise avec multi‑tenant  
-- Certification sécurité (SOC2, ISO‑27001)
+Créer la plateforme de sécurité publique la plus avancée, capable de prévenir les menaces avant qu’elles ne surviennent.
 
 ---
 
-# Technologies utilisées
+## Mission
 
-### Développement & IA
+- Utiliser l’IA pour analyser les comportements suspects  
+- Détecter les anomalies en temps réel  
+- Aider les autorités à prendre des décisions rapides et éclairées  
+- Offrir une plateforme sécurisée, fiable et évolutive  
+- Protéger les citoyens grâce à la technologie
 
-- Python / Node.js  
-- TensorFlow / PyTorch  
-- Scikit‑Learn  
-- FastAPI / Express.js
+---
 
-### DevOps & Infrastructure
+## Valeurs
 
-- Docker, Kubernetes  
+- **Sécurité** — protéger les citoyens est la priorité  
+- **Innovation** — IA, analyse comportementale, prédiction  
+- **Fiabilité** — architecture robuste, monitoring complet  
+- **Transparence** — logs, audit, traçabilité  
+- **Éthique** — IA responsable, respect des données
+
+---
+
+## Architecture Globale
+
+AI-Security
+├── Backend (API)
+├── Frontend (Dashboard)
+├── Desktop App (Agent local)
+├── DevOps (CI/CD, Docker, Terraform, Ansible)
+├── Monitoring (Prometheus, Grafana)
+└── Tests (unit, integration, sentinel)
+
+
+---
+
+## Modules du système
+
+### 🔹 Module Analyse Comportementale
+Détection de comportements suspects via IA.
+
+### 🔹 Module Surveillance Temps Réel
+Flux d’événements, alertes instantanées.
+
+### 🔹 Module Prédiction IA
+Modèles prédictifs pour anticiper les menaces.
+
+### 🔹 Module Sécurité & Audit
+Logs, traçabilité, gestion des accès.
+
+### 🔹 Module Dashboard
+Interface moderne pour visualiser les menaces.
+
+### 🔹 Module Agent Desktop
+Collecte locale d’informations (si activé).
+
+---
+
+## Technologies utilisées
+
+### Backend
+- Node.js / Express  
+- JWT / Sécurité API  
+- Base de données (selon votre choix)
+
+### Frontend
+- React / Vite  
+- TailwindCSS  
+- Axios
+
+### Desktop
+- Electron
+
+### DevOps
+- Docker  
+- Docker Compose  
+- Terraform  
+- Ansible  
 - GitLab CI/CD  
-- Terraform, Ansible  
-- Prometheus, Grafana
+- Prometheus  
+- Grafana
 
-### Sécurité
-
-- IAM / RBAC  
-- Zero‑Trust Architecture  
-- Audit & Logging avancé  
-- Analyse comportementale IA
-
----
-
-# Architecture globale
-
-AI‑Security repose sur une architecture modulaire en quatre couches :
-
-### **AI Detection Layer**
-
-- Analyse comportementale  
-- Modèles IA prédictifs  
-- Détection d’anomalies
-
-### **Security Core Layer**
-
-- Gestion des règles de sécurité  
-- Système d’alertes intelligentes  
-- Audit & logs centralisés
-
-### **API & Integration 
-
-Layer**
-- API REST  
-- Webhooks  
-- Connecteurs externes
-
-### **Dashboard & Visualization Layer**
-
-- Interface moderne  
-- Graphiques temps réel  
-- Monitoring des risques
+### Tests
+- Jest  
+- Stryker  
+- React Testing Library  
+- Sentinel tests
 
 ---
 
-# Pourquoi investir dans AI‑Security
+## Roadmap 2026–2027
 
-### Solution moderne et innovante  
+### 2026
+- Développement backend  
+- Dashboard frontend  
+- Agent desktop  
+- Monitoring complet  
+- CI/CD GitLab  
+- Tests unitaires + intégration
 
-Cybersécurité basée sur IA, adaptée aux menaces actuelles.
-
-### Automatisation avancée  
-
-Réduction des risques, alertes intelligentes, prévention proactive.
-
-### Architecture scalable 
-
-Conçue pour PME, startups et grandes entreprises.
-
-### Vision long terme
-
-Roadmap claire, évolutive, orientée IA et sécurité.
-
-### Expertise technique
-
-Développée par un ingénieur DevOps & IA expérimenté.
+### 2027
+- IA prédictive avancée  
+- Module comportemental amélioré  
+- Intégration ministérielle  
+- Version mobile  
+- Certification sécurité
 
 ---
 
-# Licence
+## Pourquoi AI‑Security est unique
 
-Voir Licence.txt
+- Plateforme dédiée à la sécurité publique  
+- IA prédictive pour anticiper les menaces  
+- Architecture robuste et scalable  
+- Monitoring complet  
+- Intégration facile dans les infrastructures gouvernementales  
+- Vision long terme solide
 
 ---
 
-# Contact
+## Structure du dépôt
 
-API Business Technology  
-Département IA & Cybersécurité  
+ai-security/
+├── backend_ai_security/
+├── frontend_ai_security/
+├── AI-SECURITY_desktop/
+├── devops/
+│    ├── ansible/
+│    ├── ci-cd/
+│    ├── docker/
+│    ├── monitoring/
+│    └── terraform/
+├── dossier_test/
+└── docs/
+
+
+---
+
+## Auteur
+
+**Pierre Richard Saint Louis — API Business Technology**  
+Fondateur & Architecte du projet AI‑Security.
+
+---
+
+## Licence
+
+Voir le fichier `LICENSE.txt` à la racine du projet.
