@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Frontend – AI‑Security
 
-First, run the development server:
+Le frontend d’AI‑Security fournit l’interface utilisateur permettant d’accéder aux fonctionnalités du système : tableau de bord, visualisation des menaces, gestion des modules, authentification, et interactions avec le backend.
+
+Ce module est développé en **React / Vite** (ou Next.js selon votre architecture) et communique directement avec l’API backend AI‑Security.
+
+---
+
+## Structure du projet
+
+frontend/
+├── src/
+│   ├── components/        # Composants réutilisables
+│   ├── pages/             # Pages principales
+│   ├── hooks/             # Hooks personnalisés
+│   ├── services/          # Appels API
+│   ├── assets/            # Images, icônes, styles
+│   └── utils/             # Fonctions utilitaires
+├── public/                # Fichiers statiques
+├── package.json
+├── vite.config.js         # Configuration Vite
+└── README.md
+
+---
+
+## Installation & Lancement
+
+### Installer les dépendances
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+http://localhost:5173
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+export const 
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+API_URL = "http://localhost:3000";
 
-## Learn More
+Technologies utilisées
 
-To learn more about Next.js, take a look at the following resources:
+React – Interface utilisateur
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Vite – Build rapide et moderne
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Axios / Fetch – Appels API
 
-## Deploy on Vercel
+TailwindCSS / CSS Modules – Styles (selon votre setup)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Jest + React Testing Library – Tests frontend
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ESLint + Prettier – Qualité du code
+
+Tests
+Les tests frontend utilisent :
+
+Jest
+
+React Testing Library
+
+Exécution :
+
+bash
+npm run test
+
+Sécurité Frontend
+Validation des entrées utilisateur
+
+Protection contre XSS via React
+
+Gestion sécurisée des tokens (localStorage ou cookies sécurisés)
+
+Appels API protégés (headers, authentification)
+
+Désactivation des scripts non autorisés
+
+npm run build
+dist/
+
+feature/frontend
