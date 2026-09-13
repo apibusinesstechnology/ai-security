@@ -5,7 +5,7 @@
        style="border-radius: 12px;" />
 </div>
 
-# 🇫🇷 **README — AI‑Security (PRO MAX)**  
+#**README — AI‑Security**  
 ### *Système de Sécurité Publique Basé sur l’Intelligence Artificielle*
 
 AI‑Security est une plateforme avancée de sécurité publique utilisant l’IA pour analyser des événements, détecter des anomalies, générer des alertes intelligentes et assister les organisations dans la prévention des risques.
