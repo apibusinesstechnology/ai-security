@@ -1,3 +1,9 @@
+<div align="center">
+  <img src="logoai-security.png"
+       alt="Logo AI-Security"
+       width="180"
+       style="border-radius: 12px;" />
+</div>
 
 # 🇫🇷 **README — AI‑Security (PRO MAX)**  
 ### *Système de Sécurité Publique Basé sur l’Intelligence Artificielle*
