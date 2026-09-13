@@ -425,7 +425,7 @@ AI‑Security suit une politique stricte de qualité logicielle.
 - Déploiement international  
 - Partenariats stratégiques  
 
-## Contact
+##Contact
 
 **Fondateur & CEO : Pierre Richard Saint Louis**  
 API Business Technology  
@@ -433,6 +433,12 @@ Gatineau,Ottawa, Canada
 apibusinesstechnology@gmail.com
 apibusinesstechnology@outlook.com
 www.apibusinesstechnology.com 
+
+##Pensée du CEO
+Si, dans ton parcours de vie, rien ne semble indiquer la réussite, ne te décourage pas. Continue de croire en une force plus grande que toi et travaille sans relâche pour construire le succès que tu désires. La réussite n’apparaît pas toujours au début, mais elle finit toujours par se manifester là où la discipline et la détermination persistent, même lorsque l’espoir devient fragile.
+
+PIerre Richard Saint Louis_CEO of API Business Technology
+
 
 
 ---
