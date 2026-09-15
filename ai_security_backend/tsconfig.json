@@ -10,10 +10,7 @@
     "noEmit": true,
     "types": ["node", "jest"]
   },
-  "include": [
-    "src/**/*",
-    "dossier_test/**/*"
-  ],
+  "include": ["src/**/*", "tests/**/*"],
   "exclude": [
     "node_modules",
     "dist"
