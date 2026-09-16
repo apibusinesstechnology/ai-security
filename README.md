@@ -73,6 +73,54 @@ Modèles entraînés pour reconnaître :
 
 ---
 
+## Objectif du Projet
+
+Le projet **AI‑Security** fournit une plateforme de sécurité intelligente basée sur l’IA, la vision par ordinateur et l’analyse vidéo.  
+Il permet de détecter les menaces, comportements suspects et événements critiques en temps réel.
+
+---
+
+## Rôle dans l’Écosystème API Business Technology
+
+Ce projet fait partie de la suite **Security & Surveillance Solutions**.  
+Il occupe le rôle suivant :
+
+- **Fonction technique :** IA + Vision + Backend  
+- **Responsabilité :**  
+  - Analyse vidéo en temps réel  
+  - Détection de menaces  
+  - Génération d’alertes intelligentes  
+  - Intégration avec AI‑Security Dashboard
+
+---
+
+## Problème résolu
+
+- Surveillance manuelle inefficace  
+- Détection tardive des incidents  
+- Absence d’analyse IA  
+- Manque d’automatisation dans la sécurité
+
+---
+
+## Utilisateurs ciblés
+
+- Entreprises  
+- Institutions publiques  
+- Centres commerciaux  
+- Établissements scolaires  
+- Infrastructures critiques
+
+---
+
+## Intégration avec les autres services
+
+- AI‑Security Dashboard  
+- Modules IA internes  
+- Services DevOps  
+- API internes
+
+
 # **Architecture Technique**
 
 ```
@@ -102,6 +150,91 @@ AI‑Security
     ├── Monitoring
     └── Infrastructure sécurisée
 ```
+---
+
+## Documentation Fonctionnelle / API
+
+Cette section présente les fonctionnalités principales du projet ainsi que la structure générale de son API.
+
+---
+
+### Endpoints principaux
+
+| Méthode | Endpoint | Description |
+|--------|----------|-------------|
+| GET    | /resource | Récupération des données principales |
+| POST   | /resource | Création d’une nouvelle ressource |
+| PUT    | /resource/:id | Mise à jour d’une ressource existante |
+| DELETE | /resource/:id | Suppression d’une ressource |
+
+> Remplacer **resource** par le nom réel selon le projet  
+> (ex : `/animals`, `/stocks`, `/alerts`, `/users`, etc.)
+
+---
+
+### Paramètres importants
+
+- **id** : Identifiant unique de la ressource  
+- **token** : Jeton d’authentification (JWT)  
+- **animalId / stockId / userId** : Identifiants spécifiques selon le projet  
+- **limit / page** : Paramètres de pagination  
+- **filter** : Filtrage des données  
+
+---
+
+### Réponses de l’API
+
+- **200 – Succès**  
+  La requête a été traitée correctement.
+
+- **201 – Créé**  
+  Une nouvelle ressource a été ajoutée.
+
+- **400 – Erreur de validation**  
+  Paramètres manquants ou invalides.
+
+- **401 – Non authentifié**  
+  Jeton invalide ou absent.
+
+- **403 – Non autorisé**  
+  L’utilisateur n’a pas les permissions nécessaires.
+
+- **404 – Introuvable**  
+  Ressource inexistante.
+
+- **500 – Erreur serveur**  
+  Problème interne du système.
+
+---
+
+### Sécurité
+
+- **JWT** pour l’authentification  
+- **RBAC** (Role-Based Access Control) pour la gestion des permissions  
+- **Chiffrement** des données sensibles  
+- **Audit logs** pour tracer les actions importantes  
+- **Validation stricte** des entrées utilisateur  
+
+---
+
+### Modules / Fonctionnalités principales
+
+- Fonctionnalité 1 : [Décrire la fonction principale du projet]  
+- Fonctionnalité 2 : [Décrire une fonction secondaire]  
+- Fonctionnalité 3 : [Décrire une interaction avec un autre service]  
+
+> Remplacer ces lignes par les vraies fonctionnalités selon le repo.
+
+---
+
+### Intégration dans l’écosystème API Business Technology
+
+Ce projet fait partie de l’écosystème global et interagit avec :
+
+- [Nom du produit principal]  
+- [Backend / Frontend / DevOps / IA / IoT]  
+- [Autres services liés]  
+
 ---
 
 # **Badges CI/CD**
