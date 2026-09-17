@@ -625,6 +625,85 @@ Ce guide représente la structure générale du déploiement réel.
 
 ---
 
+## Sécurité & Confidentialité
+
+Le module **AI‑Security Dashboard** est l’interface utilisateur permettant de visualiser les alertes, les caméras, les événements IA et les statistiques de sécurité.  
+Même si ce dépôt ne contient pas les données réelles, il représente une interface critique dans un système de surveillance intelligent.
+
+### Principes de sécurité appliqués
+- Communication sécurisée avec le backend (HTTPS / TLS)
+- Gestion des permissions (RBAC : agent, superviseur, administrateur)
+- Protection contre les attaques frontales (XSS, CSRF, injections)
+- Validation stricte des données reçues du backend
+- Masquage des informations sensibles dans l’interface
+- Journalisation des actions utilisateur (connexion, consultation d’alertes)
+
+### Confidentialité
+- Aucune vidéo réelle n’est stockée dans ce dépôt
+- Les identifiants des caméras sont masqués dans les environnements de test
+- Les systèmes réels respectent les normes canadiennes de protection des données (PIPEDA)
+- Les données sensibles sont traitées uniquement dans des environnements sécurisés
+
+AI‑Security Dashboard garantit une visualisation sécurisée et conforme des données de surveillance intelligente.
+```
+
+## Installation & Déploiement (Modèle)
+
+Ce dépôt représente l’interface utilisateur du système **AI‑Security**, permettant aux agents de consulter les alertes et les flux vidéo analysés par l’IA.
+
+### Prérequis
+- Node.js (React / Next.js)
+- Git
+- Navigateur moderne
+- Variables d’environnement pour la connexion au backend
+
+### Installation (modèle)
+```bash
+git clone https://gitlab.com/api-business-technology/ai-security-dashboard
+cd ai-security-dashboard
+```
+
+### Déploiement (modèle)
+- Configuration de l’URL du backend
+- Déploiement sur un hébergement cloud sécurisé
+- Activation des modules d’affichage vidéo
+- Intégration avec les systèmes d’authentification
+- Publication via CI/CD (GitLab)
+
+Ce guide représente la structure générale du déploiement réel.
+```
+
+## Roadmap (Modèle)
+
+### Q1 — Fondation
+- Architecture frontend
+- Structure du dashboard
+- Documentation des composants
+
+### Q2 — Visualisation IA
+- Affichage des alertes IA
+- Gestion des caméras
+- Visualisation des événements critiques
+
+### Q3 — Optimisation
+- Amélioration de l’expérience utilisateur
+- Sécurité renforcée
+- Tests UI avancés
+
+### Q4 — Scalabilité
+- Support de centaines de caméras
+- Optimisation cloud
+- Intégration complète AI‑Security
+
+### Vision 2027
+- Dashboard IA en temps réel
+- Analyse vidéo multi‑site
+
+### Vision 2030
+- Plateforme de sécurité autonome
+- Interface unifiée pour la surveillance intelligente
+```
+
 ##Contact
 
 **Fondateur & CEO : Pierre Richard Saint Louis**  
