@@ -324,11 +324,8 @@ L’architecture IA d’AI‑Security comprend :
 - Archivage des événements
 ```
 
----
-
 # **Sécurité & Confidentialité**
 
-```markdown
 ## Sécurité & Confidentialité
 
 AI‑Security respecte des normes strictes de sécurité :
@@ -368,7 +365,6 @@ AI‑Security respecte des normes strictes de sécurité :
 ## ⚙️ Installation & Déploiement
 
 ### Backend
-```bash
 npm install
 npm run build
 npm start
@@ -547,22 +543,87 @@ AI‑Security suit une politique stricte de qualité logicielle.
 
 ---
 
-# **Roadmap**
+## Sécurité & Confidentialité
 
-### 2026  
-- Stabilisation IA  
-- Dashboard v1  
-- Pipeline complet  
+Le module **AI‑Security Backend** traite des données critiques provenant de caméras, capteurs de sécurité et modules d’analyse IA.  
+La sécurité est au cœur de ce système, car il gère des informations sensibles liées à la surveillance, aux accès et aux événements potentiellement dangereux.
 
-### 2027  
-- IA prédictive  
-- Alertes avancées  
-- Intégration cloud  
+### Principes de sécurité appliqués
+- Chiffrement complet des flux vidéo et des métadonnées (TLS, SRTP)
+- Authentification par jetons sécurisés (JWT)
+- Gestion des permissions avancée (RBAC pour agents, administrateurs, opérateurs)
+- Protection contre les attaques API (OWASP, rate limiting, anti‑replay)
+- Validation stricte des données envoyées par les caméras et modules IA
+- Journalisation des événements critiques (détections, alertes, accès)
+- Isolation des environnements (dev, staging, production)
 
-### 2028  
-- Version entreprise  
-- Déploiement international  
-- Partenariats stratégiques  
+### Confidentialité
+- Aucune vidéo réelle n’est stockée dans ce dépôt
+- Les identifiants des caméras sont masqués dans les environnements de test
+- Les systèmes réels respectent les normes canadiennes de protection des données (PIPEDA)
+- Les données sensibles sont traitées uniquement dans des environnements sécurisés
+
+AI‑Security Backend garantit une gestion sécurisée, conforme et fiable des données de surveillance intelligente.
+```
+## Installation & Déploiement (Modèle)
+
+Ce dépôt représente le backend du système **AI‑Security**, responsable de l’analyse IA, de la gestion des caméras et de la génération d’alertes.
+
+### Prérequis
+- Python (modules IA, vision par ordinateur)
+- Node.js (API REST si applicable)
+- Git
+- Accès à un environnement vidéo (RTSP, HTTP)
+- Variables d’environnement pour les modules IA et les caméras
+
+### Installation (modèle)
+```bash
+git clone https://gitlab.com/api-business-technology/ai-security-backend
+cd ai-security-backend
+```
+
+### Déploiement (modèle)
+- Configuration des caméras (RTSP / IP)
+- Activation des modules IA (TensorFlow / PyTorch)
+- Déploiement sur un serveur cloud sécurisé
+- Intégration avec AI‑Security Dashboard
+- Mise en place des logs et alertes
+
+Ce guide représente la structure générale du déploiement réel.
+```
+
+## Roadmap (Modèle)
+
+### Q1 — Fondation
+- Architecture backend
+- Structure API
+- Documentation des endpoints
+
+### Q2 — IA & Vision
+- Détection d’intrusion
+- Analyse comportementale
+- Reconnaissance d’objets
+
+### Q3 — Optimisation
+- Amélioration des performances IA
+- Sécurité renforcée
+- Tests vidéo avancés
+
+### Q4 — Scalabilité
+- Support de centaines de caméras
+- Optimisation cloud
+- Intégration complète AI‑Security
+
+### Vision 2027
+- IA prédictive pour la sécurité
+- Analyse vidéo en temps réel multi‑site
+
+### Vision 2030
+- Plateforme de sécurité autonome
+- Surveillance intelligente unifiée
+```
+
+---
 
 ##Contact
 
